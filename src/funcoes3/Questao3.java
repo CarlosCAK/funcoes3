@@ -7,12 +7,26 @@ public class Questao3 {
 		
 	 Scanner sc = new Scanner(System.in);
 	 
-	 String teste;
+	 String parametro;
 	 
-	 System.out.println("Asd");
-	 teste = sc.next();
+	 System.out.println("Digite o parametro");
+	 parametro = sc.next();
 	 
-	 System.out.println(teste);
 	}
+	public static int parametros (String paramentro) {
+		int num = 9;
+		int contDigito = 0;
+		int contLetra = 0;
+		
+		for(int cont = 0; cont < paramentro.length();cont++) {
+		if(isletter is digit) {
+			
+		}
+		
+		}
+		return num;
+	}
+	
 
 }
+
