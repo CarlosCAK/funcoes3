@@ -12,15 +12,33 @@ public class Questao3 {
 	 System.out.println("Digite o parametro");
 	 parametro = sc.next();
 	 
+	 int volta = parametros(parametro);
+	 
+	 System.out.println(volta);
+	 
 	}
-	public static int parametros (String paramentro) {
+	public static int parametros (String parametro) {
 		int num = 9;
 		int contDigito = 0;
 		int contLetra = 0;
 		
-		for(int cont = 0; cont < paramentro.length();cont++) {
-		if(isletter is digit) {
-			
+		for(int cont = 0; cont < parametro.length();cont++) {
+		if(Character.isLetter(parametro.charAt(cont))) {
+			contLetra++;
+		}
+		if(Character.isDigit(parametro.charAt(cont))) {
+			contDigito++;
+		}
+		if(! Character.isDigit(parametro.charAt(cont))) {
+			if(! Character.isLetter(parametro.charAt(cont))) {
+				return - 1;
+			}
+		}
+		if(contLetra > contDigito) {
+			num = 1;
+		}
+		else {
+			num = 0;
 		}
 		
 		}
