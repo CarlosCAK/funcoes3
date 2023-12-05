@@ -25,21 +25,24 @@ public class Questao9 {
 	}
 	public static int calculo(int numero1, int numero2){
 		
-		int calculo = 0 ;
-	
-		do {
-			numero1 /= 2;
-			
-			numero2  *= 2;
-			
-			if (numero1 % 2 == 0 && numero2 % 2 == 0 ) {
-				System.out.println(numero2+ "   "+ numero1);
-				calculo += numero2;
+		int resultado = 0 ;
+		int numeroteste = numero2;
+		
+		if(numero1 % 2 != 0 ) {
+			do {
+				numero1 /= 2;
+				numero2 *= 2;
+				if (numero1 % 2 != 0 ) {
+					numero2 += numeroteste;
+				}
 				
-				System.out.println(calculo);
-			}
-		}while (numero1 >= 2);
-		return calculo;
+			} while(numero1 > 1);
+			resultado = numero2;
+		
+		}
+		
+		return resultado;
 	}
+		
 
 }
